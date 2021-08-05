@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!--informa para o navegador sobre qual versão do HTML estamos usando. -->
+
+<html lang='pt-br'>
+	<head>
+
+		<title>Hanna Programa</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style-home.css">
+
+		<!--<style>p {text-align: center </style> Vamos criar um novo arquivo com a extensão .css e jogar o conteúdo da tag style nela através do href="nome do arquivo" traz o código.-->
+
+	</head>
+		
+	<body>
+
+		<header> <!--na última versão do HTML criaram uma tag específica para o cabeçalho. É uma tag mais semântica que diz para o navegador que aquilo ali é a primeira informação a ser apresentada.-->
+			<h1 class="titulo-principal">Barbearia Hanna</h1>
+		</header>
+			
+		<img id="banner" src="banner.jpg">
+		<!--A tag img serve para chamarmos uma imagem, e como ela é um arquivo externo, precisamos dizer onde está, dizer qual a fonte dessa imagem. Para isso, usamos a propriedade source. Só que não escrevemos isso por inteiro. Abreviamos para src e colocamos o endereço: img src="banner.jpg".
+
+		Como essa é uma tag de chamada de arquivo externo, não abrimos e fechamos. Ela é só a definição da tag.-->
+	
+		<div class="sobreABarbearia"> <!--a tag div é específica para dividir o conteúdo. ela não tem outra função além dessa. Criamos uma classe para referenciar no CSS-->
+			<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
+			<!--o caractere ':' serve para atribuir um valor a uma propriedade no CSS-->
+
+			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+			<p id="um"><em>  Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+			<p>Oferecemos profissio nais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</div>	
+	
+	<div class="beneficios">
+		<h3 class="titulo-centralizado">Benefícios</h3>
+
+		<ul> <!--'ul', de unordered list, da um tab, serve para listas não ordenadas, ao contrário do 'ol' e o 'li' marcação de ponto. A tag ul é uma tag de conteúdo, ou seja, ela inica e fecha. Ela precisa ainda de mercação para cada item, e para isso, usamos a tag li, de list item.-->
+			<li class ="itens"> Atendimento aos Clientes </li>
+			<li class="itens">Espaço difereniado</li> 
+			<li class="itens">Localização</li>
+			<li class="itens">Profissionais Qualificados</li>
+		</ul>
+
+		<img src="beneficios.jpg" class="imagembeneficios">
+	</div>
+		
+	</body>
+		
+
+</html>

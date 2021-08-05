@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Contato - Barbearia Hanna</title>
+	<link rel="stylesheet" href="reset.css"> 
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Oswald&family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">	
+</head>
+
+<body>
+	<header>
+
+		<div class="conteudoDoCabeçalho">
+		
+			<h1><img src="logo.png" alt="Logo da Barbearia Hanna"></h1>
+
+			<nav class="menu">
+				
+			<ul>
+			
+				<li><a href="home.html" target="blank">Home</a></li> <!--target="blank" serve para abrir uma nova aba quando clicado no link Home-->
+				<li><a href="produtos.html">Produtos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<form>
+			<label for="nomesobrenome">Nome e Sobrenome</label>
+			<!--para texto usamos as tags h1 e o parágrafo. Dentro do form usamos smpre uma etiqueta para o input que é um <label> Esse par sempre anda junto. Eu tenho um label e tenho um input.
+
+			Toda vez que eu tenho um input, eu boto um identificador nele <input type=”text” id=”nomesobrenome”>. Um input geralmente é único, eu vou ter uma entrada do nome e sobrenome do usuário. E no identificador, eu coloco qualquer conteúdo, “nomesobrenome”. E no label, eu digo que aquilo é uma etiqueta para um input, então<label for=“nomesobrenome"> que eu tenho aqui no meu input.
+
+			Quando eu quero digitar alguma coisa no meu input, eu clico aqui no campo e começo a digitar. Quando meu mouse não está dentro do campo para digitar, eu posso clicar no label “Nome e sobrenome”-->
+			<input type="text" id="nomesobrenome" class="input-padrao" required="">
+			<!--required para informar que o campo é obrigatório-->
+
+			<label for="email">e-mail</label>
+			<input type="email" id="email" class="input-padrao" required="">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrao" required="" placeholder="DDD + Número">
+
+			<!--Essa é a estrutura básica que vamos ter sempre criando um formulário: a tag form para criar um formulário; tag input para a entrada de dados do usuáro; tag label para criar uma etiqueta para o input; ao conectar um input com o seu label colocamos un id para o input e associamos esse id ao atributo for do label. Lavel e input por padrão possuem o display inline.-->
+
+			<label for="mensagem">Mensagem</label>
+			<textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+			<fieldset>
+			<!--fieldset (criar uma divisão na tag form para melhor organização do CSS) e legend (para marcar um título nas tags form. Estavamos usando a tag div e <p> porém no formulário essa é a melhor opção-->
+				<legend>Como prefere o nosso contato?</legend>
+
+				<label for="radio-email">e-mail</label>
+				<input type="radio" name="contato" id="radio-email"> <!--type radio
+				'name' serve para montar um grupo para que na hora vc escolha somente uma opçõa dentre type'radio' na pag. Assim nao podemos marcar mais de uma opção. O "name" deve ser igual para todos os type radio para que na seleção vc consiga marcar somente um objeto-->
+
+				<label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone</label>
+				
+
+				<label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" checked="">WhatsApp</label>
+				<!--checked para deixar ticado automaticamente-->
+				
+			</fieldset>	
+
+			<fieldset>
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+			
+			<label class="checkbox"><input type="checkbox" checked=""> Gostaria de receber nossas novidades por e-mail?</label>
+
+			<input class="enviar" type="submit" value="Enviar formulário"> <!--um botão para enviar aqueles dados para um servidor, e-mail, ou para uma próxima página-->	
+		</form>
+
+		<table> <!--tag p/ criar tabela-->
+			<thead> <!--representa o cabeçalho -->
+				<tr> <!--tag que representa a linha-->
+					<th>Dia</th> <!--tag p/ célula do cabeçalho da tabela.-->
+					<th>Horário</th>
+				</tr>
+
+			</thead>
+
+			<tbody><!--corpo da tabela-->
+				<tr>
+					<td> Segunda</td> <!--tag para célula-->
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+			</tbody>
+			
+		</table>
+
+	</main>
+
+	<footer> <!--tag para rodapé-->
+		<img src="logo-branco.png" alt="logo Barbearia Hanna">
+		<p class="textoRodape">&copy; Copyright Barbearia Hanna - 2020</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*A maneira correta para declarar um CSS que pode ser usado em várias páginas diferentes é em um arquivo externo, e fazendo referencia a esse arquivo, podemos usar o mesmo CSS em página diferentes
+Como o CSS é uma folha de estilos em cascata, a cascata vai descendo, e o que eu faço no elemento pai reflete para o elemento filho.
+CSS inline é a linha onde a nossa tag é adicionada a propriedades do CSS*/
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+#banner {
+	width: 100%;
+}
+
+.sobreABarbearia {
+	background: #CCCCCC;
+	padding: 30px; /*espaçamento interno do bloco*/
+}
+
+ .titulo-centralizado {
+ 	text-align: center;
+ }
+
+p {text-align: center}
+
+/*Toda vez que estamos marcando uma tag e queremos referenciar ela no CSS, usamos o nome da tag. Toda vez que temos um identificador no HTML e queremos referenciar ele no CSS, usamos #*/
+#um {font-size: 20px}
+
+/*coloca o 'em' para identificar, que é para pintar somente o parágrafo em itálico.*/
+em strong {color: #FF0000; /*posso representar as cores no CSS através do código Binário, hexadecimal(#FF0000), RGB (255,0,0) e com os nomes das cores em inglês*/
+}
+
+/*Para referenciar uma classe no CSS usamos '.'. O identificador serve para itens únicos e a classe serve para itens que serão repetidos.*/
+
+.itens { 
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px; 
+}
+
+ul {
+	display: inline-block; /*O display inline block ocupa só o tamanho do conteúdo, mas me deixa mexer na largura e espaçamentos.*/
+	vertical-align: top;
+	width: 25%;
+	margin-right: 5%;
+}
+
+.imagembeneficios {
+	width: 50%;
+}
